@@ -1,15 +1,19 @@
 import React from "react";
 import "../src/styles/App.css";
-import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from "./pages/home/Home";
+import FicheLogement from "./pages/Logement/Logement"
+import Error from "../src/pages/Error/Error"
 
 const App = () => {
   return (
-    <HashRouter>
+    <Router>
       <Routes>
-        <Route path="/accueil" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={FicheLogement}/>
+        <Route path="*" element={<Error/>}/>
       </Routes>
-    </HashRouter>
+    </Router>
   );
 };
 

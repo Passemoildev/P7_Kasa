@@ -1,15 +1,16 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import Body from '../../components/Body/body';
 import Footer from '../../components/footer/Footer';
-const Home =() =>{
+import Body from '../../components/Logement/Body';
+
+const FicheLogement =() =>{
     return(
-        <div className="home">
+        <div className="fiche_logement">
       <Header />
-      <Body />
+      < Body/>
       <Footer />
     </div>
     )
 }
 
-export default Home;
+export default FicheLogement;

@@ -7,7 +7,7 @@
     }
   
      &__nav-link-home,
-    &__nav-link-about {
+    &__nav-link-aboutus {
       @include font-right(12px);
       color: $primary-color;
       text-decoration: none;
@@ -24,4 +24,3 @@
       }
     }
   }
-  
