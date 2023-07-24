@@ -6,10 +6,12 @@ import Body from '../../components/Logement/Body';
 const FicheLogement =() =>{
     return(
         <div className="fiche_logement">
-      <Header />
-      < Body/>
-      <Footer />
-    </div>
+          <Header />
+          <main>
+            <Body/>
+          </main>
+          <Footer />
+        </div>
     )
 }
 

@@ -4,7 +4,7 @@ const Collapse = ({ title, content }) => {
   //declaration du state en utilisant le Hook useState()
   const [isOpen, setIsOpen] = useState(false); // je definie le state du toggle (et false par défaut)
 
-  //fonction pour gérer l'afichage du contenu des collapses
+  //fonction pour gérer l'affichage du contenu des collapses
   const display = () => {
     setIsOpen(!isOpen);
   };

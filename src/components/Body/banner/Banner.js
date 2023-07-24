@@ -1,5 +1,13 @@
-function Banner () {
-    return <h1>Chez vous, partout et ailleurs</h1>
+import React from "react";
+
+function Banner ({image, texte}) {
+    return (
+        <div className="banner">
+            <span>{texte}</span>
+            <img className="banner__img" src={image} alt="Bannière" />
+        </div>
+  );
 }
+   
 
 export default Banner
