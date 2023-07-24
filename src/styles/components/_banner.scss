@@ -1,0 +1,27 @@
+.banner{
+    height: 223px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__img {
+        object-fit:cover;
+        height: 100%;
+        width: 100%;
+        filter: brightness(70%);
+        z-index: 1;
+    }
+
+    &__txt{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 48px;
+        color: $tertiary-color;
+        z-index: 2;
+    }
+}

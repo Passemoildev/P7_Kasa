@@ -11,7 +11,7 @@ const Home =() =>{
       <div className="home">
         <Header />
         <main>
-          <Banner texte="Chez vous, partout et ailleurs" image={bgHomeBanner} />,
+          <Banner texte="Chez vous, partout et ailleurs" image={bgHomeBanner} />
           <Gallery/>
         </main>
         <Footer />

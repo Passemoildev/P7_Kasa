@@ -1,11 +1,13 @@
 .nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-    text-transform: uppercase;
+  @include flexend;
+  text-transform: uppercase;
   
-    @media screen and (min-width: $breakpoint-desktop) {
-      text-transform: none;
-    }
-  
+  @media screen and (min-width: $breakpoint-desktop) {
+    text-transform: none;
   }
+  
+  
+  &__nav-link-home, &__nav-link-aboutus{
+    padding-left: 2rem;
+  }
+}
