@@ -1,0 +1,24 @@
+.errorContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__Number{
+        color: $primary-color;
+        font-family: Montserrat,sans-serif;
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 411px;
+        letter-spacing: 0em;
+        text-align: center;
+
+
+    }
+    &__Text{
+        font-size: 36px;
+        color: $primary-color;
+    }
+    &__Link{
+        font-size: 18px;
+        margin: 30px;
+    }
+}

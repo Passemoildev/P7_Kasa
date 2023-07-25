@@ -11,12 +11,13 @@ a{
     color: $primary-color;
 }
 
+
 main{
     @include margin;
 }
 article{
     width: 33%;
     padding: 3%;
-    min-height: 33%;
+    min-height: 40%;
 }
 
