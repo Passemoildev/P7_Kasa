@@ -192,4 +192,26 @@ article {
   margin: 30px;
 }
 
+.collapse {
+  display: flex;
+  width: 80%;
+}
+.collapse__dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.collapse__dropdown__title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #ff6060;
+  margin: 10px;
+  color: #ffffff;
+}
+.collapse__container {
+  width: 100%;
+  display: flex;
+}
+
 /*# sourceMappingURL=App.css.map */
