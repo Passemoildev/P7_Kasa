@@ -1,0 +1,32 @@
+.footer{
+    background-color: $footer-bg;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &__contLogo{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        &__logo{
+            width: 122px;
+            height: 40px;
+        }
+    }
+    &__contCopyright{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__copyright{
+            color: $tertiary-color;
+        }
+    }
+        
+}

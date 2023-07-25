@@ -1,0 +1,8 @@
+.cont_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: $secondary-color;
+    margin-top: 20px;
+    border-radius: 20px;
+}

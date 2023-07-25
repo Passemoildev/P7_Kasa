@@ -1,0 +1,45 @@
+.card{
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    animation: fade 600ms ease-in-out;
+
+    &__img {
+        object-fit:cover;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        filter: brightness(80%);
+        border-radius: 10px;
+        transform: scale(1);
+        transition: transform 300ms;
+    
+
+    }
+    &__title{
+        position: absolute;
+        display: flex;
+        color: $tertiary-color;
+        z-index: 2;
+        font-size: 18px;
+        font-style: normal;
+        padding:15px;
+    }
+    
+    &:hover {
+        > .card__img {
+          transform: scale(1.05);
+        }
+      }
+    @keyframes fade {
+        0% {
+          opacity: 0;
+          transform: translateY(5px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+}
