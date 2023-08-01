@@ -39,22 +39,62 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 34.22px;
+}
+@media screen and (max-width: 479px) {
+  * {
+    line-height: 17.11px;
+    font-size: 12px;
+  }
 }
 
 a {
   text-decoration: none;
   color: #ff6060;
 }
+@media screen and (max-width: 479px) {
+  a {
+    font-size: 12px;
+  }
+}
 
 main {
   margin: 0 7% 0 7%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 article {
   width: 33%;
   padding: 3%;
   min-height: 40%;
+}
+
+p {
+  vertical-align: middle;
+  color: #ff6060;
+  font-size: 18px;
+}
+@media screen and (max-width: 479px) {
+  p {
+    font-size: 12px;
+  }
+}
+
+h2 {
+  font-size: 18px;
+}
+@media screen and (max-width: 479px) {
+  h2 {
+    font-size: 13px;
+  }
+}
+
+ul {
+  list-style-type: none;
 }
 
 .header {
@@ -69,6 +109,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .banner__img {
   object-fit: cover;
@@ -183,35 +224,308 @@ article {
   letter-spacing: 0em;
   text-align: center;
 }
+@media screen and (max-width: 479px) {
+  .errorContainer__Number {
+    font-size: 96px;
+    margin: auto;
+    margin-top: 30%;
+    line-height: 136.9px;
+  }
+}
 .errorContainer__Text {
   font-size: 36px;
   color: #ff6060;
+}
+@media screen and (max-width: 479px) {
+  .errorContainer__Text {
+    font-size: 18px;
+    margin: 10%;
+    text-align: center;
+  }
 }
 .errorContainer__Link {
   font-size: 18px;
   margin: 30px;
 }
 
+.cont-collapse {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .collapse {
   display: flex;
-  width: 80%;
+  width: 100%;
+  justify-content: center;
 }
 .collapse__dropdown {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+.collapse__dropdown__container {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  margin: 2% 0% 2% 0%;
+  width: 90%;
+}
+@media screen and (max-width: 479px) {
+  .collapse__dropdown__container {
+    width: 100%;
+  }
+}
+.collapse__dropdown__content {
+  padding: 10px;
+  line-height: 34.22px;
+}
 .collapse__dropdown__title {
   display: flex;
   width: 100%;
   justify-content: space-between;
   background-color: #ff6060;
-  margin: 10px;
   color: #ffffff;
+  font-style: normal;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 479px) {
+  .collapse__dropdown__title {
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+  }
 }
 .collapse__container {
   width: 100%;
   display: flex;
+}
+
+.chevron {
+  color: #ffffff;
+}
+
+.slide {
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.slide__image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(90%);
+  z-index: 1;
+  border-radius: 20px;
+}
+.slide__number {
+  display: none;
+}
+
+.cont-arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  height: 20px;
+}
+
+.left-Arrow {
+  display: flex;
+  position: absolute;
+  font-size: 79px;
+  left: 2%;
+  height: 79.2px;
+  z-index: 10;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.right-Arrow {
+  display: flex;
+  position: absolute;
+  font-size: 79px;
+  right: 2%;
+  height: 79.2px;
+  z-index: 10;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.Fiche-container {
+  width: 100%;
+}
+
+.Fiche-logement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.description-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 479px) {
+  .description-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.description-info__proprietaire {
+  color: #ff6060;
+}
+@media screen and (max-width: 479px) {
+  .description-info__proprietaire {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.description-info__proprietaire__nom-prop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.description-info__proprietaire__rate {
+  text-align: end;
+}
+.description-info__titletags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (max-width: 479px) {
+  .description-info__titletags {
+    width: 100%;
+  }
+}
+.description-info__titletags__title {
+  display: flex;
+  flex-direction: column;
+}
+.description-info__titletags__tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.photo-proprietaire {
+  border-radius: 50%;
+}
+@media screen and (max-width: 479px) {
+  .photo-proprietaire {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.nom-proprietaire {
+  padding: 10px;
+  width: 90px;
+  text-align: end;
+}
+@media screen and (max-width: 479px) {
+  .nom-proprietaire {
+    font-size: 12px;
+    width: 65px;
+  }
+}
+
+.tag-container {
+  color: #ffffff;
+  background-color: #ff6060;
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 479px) {
+  .tag-container {
+    width: 84px;
+    height: 18px;
+  }
+}
+.tag-container__button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+@media screen and (max-width: 479px) {
+  .tag-container__button {
+    font-size: 10px;
+  }
+}
+
+.titre-logement {
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff6060;
+}
+@media screen and (max-width: 479px) {
+  .titre-logement {
+    font-size: 18px;
+  }
+}
+
+.endroit-logement {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff6060;
+}
+@media screen and (max-width: 479px) {
+  .endroit-logement {
+    font-size: 14px;
+  }
+}
+
+.description-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 479px) {
+  .description-content {
+    flex-direction: column-reverse;
+  }
+}
+.description-content__description {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.description-content__equipement {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 479px) {
+  .fullStar, .emptyStar {
+    height: 18px;
+  }
+}
+
+.fa-solid {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=App.css.map */

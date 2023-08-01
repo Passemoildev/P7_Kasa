@@ -1,19 +1,32 @@
+@import '../utils/mixins';
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 34.22px;
+    @include mobile{
+        line-height: 17.11px;
+        font-size: 12px;
+    }
 }
 
 a{
     text-decoration: none;
     color: $primary-color;
+    @include mobile{
+        font-size: 12px
+    }
 }
 
 
 main{
     @include margin;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 article{
     width: 33%;
@@ -21,3 +34,22 @@ article{
     min-height: 40%;
 }
 
+p{
+    vertical-align: middle;
+    color: $primary-color;
+    font-size: 18px;
+    @include mobile{
+        font-size: 12px;
+    }
+}
+
+h2{
+    font-size: 18px;
+    @include mobile{
+        font-size: 13px;
+    }
+}
+
+ul {
+    list-style-type: none;
+  }

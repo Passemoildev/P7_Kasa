@@ -14,7 +14,7 @@ const Collapse = ({ title, content }) => {
     <div className="collapse__dropdown__container">
       <div className="collapse__dropdown__title">
         <h2>{title}</h2>
-        <p onClick={display}>
+        <p className="chevron" onClick={display}>
           {isOpen ? (
             <i className="fa-solid fa-chevron-up"></i>
           ) : (

@@ -1,0 +1,50 @@
+.slide{
+    border-radius: 15px;
+    position :relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__image{
+        object-fit:cover;
+        height: 100%;
+        width: 100%;
+        filter: brightness(90%);
+        z-index: 1;
+        border-radius: 20px;
+    }
+    &__number{
+        display: none;
+    }
+}
+
+.cont-arrows{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    height:20px;
+}
+
+.left-Arrow{
+    display: flex;
+    position: absolute;
+    font-size: 79px;
+    left: 2%;
+    height: 79.2px;
+    z-index: 10;
+    cursor: pointer;
+    color: $tertiary-color;
+}
+
+.right-Arrow{
+    display: flex;
+    position: absolute;
+    font-size: 79px;
+    right: 2%;
+    height: 79.2px;
+    z-index: 10;
+    cursor: pointer;
+    color: $tertiary-color;
+}

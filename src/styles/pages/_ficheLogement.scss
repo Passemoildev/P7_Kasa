@@ -1,0 +1,161 @@
+@import '../components/carrousel';
+
+.Fiche-container{
+    width: 100%;
+}
+
+
+
+.Fiche-logement{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+};
+.description-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @include mobile{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__proprietaire{
+        color: $primary-color;
+        @include mobile{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &__nom-prop{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        &__rate{
+            text-align: end;         
+        }
+    };
+    &__titletags{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @include mobile{
+            width: 100%;
+        }
+        &__title{
+            display: flex;
+            flex-direction: column;
+        }
+        &__tags{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+    }
+    
+};
+
+.photo-proprietaire{
+    border-radius: 50%;
+    @include mobile{
+        width: 32px;
+        height: 32px;
+    }
+
+}
+
+.nom-proprietaire{
+    padding: 10px;
+    width: 90px;
+    text-align: end;
+    @include mobile{
+        font-size: 12px;
+        width: 65px;
+    }
+}
+
+.tag-container{
+    color: $tertiary-color;
+    background-color: $primary-color;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile{
+        width: 84px;
+        height: 18px;
+    }
+    &__button{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        @include mobile{
+            font-size: 10px;
+        }
+
+    }
+
+}
+
+.titre-logement{
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $primary-color;
+    @include mobile{
+        font-size: 18px
+    }
+};
+
+.endroit-logement{
+    font-family: Montserrat,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $primary-color;
+    @include mobile{
+        font-size: 14px
+    }
+
+};
+
+.description-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    @include mobile{
+        flex-direction: column-reverse;
+    }
+    &__description{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__equipement{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.fullStar, .emptyStar {
+    @include mobile{
+        height:18px;
+    }
+
+}
+
+.fa-solid{
+    font-size: 24px;
+}

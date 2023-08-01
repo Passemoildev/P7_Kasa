@@ -12,16 +12,17 @@ const Aboutus = () => {
             <Header/>
             <main>
                 <Banner texte ="" image={Bg}/>
-                
-                <div className="collapse">
-                    <div className="collapse__dropdown">
-                        {Valeurs.map((item) => {
-                        return (
-                            <div key={item.id}>
-                            <Collapse content={item.content} title={item.title} />
-                            </div>
-                        )})}
-                    </div>
+                {/* <div className='margin-collapse'> */}
+                    <div className="collapse">
+                        <div className="collapse__dropdown">
+                            {Valeurs.map((item) => {
+                            return (
+                                <div className="cont-collapse" key={item.id}>
+                                <Collapse content={item.content} title={item.title} />
+                                </div>
+                            )})}
+                        </div>
+                    {/* </div> */}
                 </div>
             </main>
             <Footer/>

@@ -27,3 +27,9 @@
 @mixin margin{
   margin: 0 7% 0 7%;
 }
+
+@mixin mobile{
+  @media screen and (max-width: map-get($breakpoints, mobile-landscape)){
+    @content;
+  }
+}

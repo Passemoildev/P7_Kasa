@@ -1,17 +1,16 @@
-//import React, { useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import DataFichLogement from "../../datas/logements.json";
 import Tag from "./Content/Tag";
-import Collapse from "../collapse/Collapse";
 import Carrousel from "./Carrousel/Carrousel";
 import Rate from "./Content/Rating";
 import Host from "./Content/Host";
+import Collapse from "../collapse/Collapse";
 
 const FicheLogementDisplay = () => {
   /* Sélection en fonction de l'ID*/
   const { id } = useParams();
-
   const ficheLogement = DataFichLogement.find((logement) => logement.id === id);
+  console.log(ficheLogement);
 
   /* Tags */
   const tagsLogement = ficheLogement?.tags.map((tags, i) => {
@@ -56,21 +55,21 @@ const FicheLogementDisplay = () => {
                   />
                 </div>
                 {/* Rating */}
-                <div className="description-info__proprietaire__rate">
+                {<div className="description-info__proprietaire__rate">
                   <Rate score={ficheLogement.rating} />
-                </div>
+                </div>}
               </div>
             </div>
           </section>
           {/* Collapse */}
-          <div className="description-centent">
-            <div className="description-centent__description">
+          <div className="description-content">
+            <div className="description-content__description">
               <Collapse
                 title="Description"
                 content={ficheLogement?.description}
               />
             </div>
-            <div className="description-centent__equipement">
+            <div className="description-content__equipement">
               <Collapse title="Équipements" content={equipements} />
             </div>
           </div>

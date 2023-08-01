@@ -19,6 +19,7 @@ function Carrousel({ slides }) {
   }
   return (
     <section className="slide">
+      <div className="cont-arrows">
       {length > 1 && (
         <p className="left-Arrow" onClick={prevImage}>
           <i className="fa-solid fa-chevron-left"></i>
@@ -28,7 +29,7 @@ function Carrousel({ slides }) {
         <p className="right-Arrow" onClick={nextImage}>
           <i className="fa-solid fa-chevron-right"></i>
         </p>
-      )}
+      )}</div>
       {slides.map((image, index) => {
         return (
           <div
@@ -39,7 +40,7 @@ function Carrousel({ slides }) {
               <img src={image} alt="img-appartement" className="slide__image" />
             )}
             {index === current && length > 1 && (
-              <span className="slider__number">
+              <span className="slide__number">
                 {current + 1}/{length}
               </span>
             )}

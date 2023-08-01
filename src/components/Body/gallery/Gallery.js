@@ -1,16 +1,17 @@
 import React from 'react'
 import logements from '../../../datas/logements.json'
 import Card from './cards'
+import { Link } from 'react-router-dom'
 
 const Gallery = () =>{
     return(
         <div className='cont_gallery'>
-            {logements.map((logement) => {
+            {logements.map((logements) => {
         return (
-          <article key={logement.id}>
-            <a href="{`/logement/${logement.id}`}">
-                <Card image={logement.cover} title={logement.title} />
-            </a>
+          <article key={logements.id}>
+            <Link to ="{`/logements/:id}`}">
+                <Card id={logements.id} image={logements.cover} title={logements.title} />
+            </Link>
           </article>
         );
             })};

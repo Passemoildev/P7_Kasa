@@ -18,14 +18,15 @@ $about-background-mobile: $background-color
 $banner-background: $background-color
   url(../../assets/images/banner/homeBanner.png);
 
-$breakpoints: (
-  small: 350px,
-  medium: 768px,
-  large: 992px,
-  xlarge: 1200px,
-);
+
 
 $breakpoint-desktop: 769px;
 
 $wmin: 375px;
 $wmax: 768px;
+$breakpoints: (
+    mobile-landscape : 479px, // max portrait et min landscape
+    tab-portrait : 719px,     // min tab port et max mobile landscape
+    tab-landscape : 1279px,   // min tab landscape et max tab-portrait
+    desktop-min : 1599px,     // min pour desktop
+  );
