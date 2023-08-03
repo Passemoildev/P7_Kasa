@@ -5,10 +5,14 @@ import Bg from '../../assets/bg_banner_aboutus.svg'
 import Collapse from '../../components/collapse/Collapse'
 import Valeurs from'../../datas/collapses_data'
 import Footer from '../../components/footer/Footer'
+import {Helmet} from 'react-helmet-async'
 
 const Aboutus = () => {
     return (
         <div className='aboutus'>
+            <Helmet>
+                <title>A propos</title>
+            </Helmet>
             <Header/>
             <main>
                 <Banner texte ="" image={Bg}/>

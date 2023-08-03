@@ -276,7 +276,7 @@ ul {
   }
 }
 .collapse__dropdown__content {
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   line-height: 34.22px;
 }
 .collapse__dropdown__title {
