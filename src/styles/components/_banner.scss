@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    @include mobile{
+        height: 111px;
+        justify-content: flex-start;
+    }
 
 
     &__img {
@@ -26,5 +30,13 @@
         font-size: 48px;
         color: $tertiary-color;
         z-index: 2;
+        @include mobile{
+            font-size: 24px;
+            width: 60%;
+            text-align: start;
+            line-height: 24px;
+            font-weight: 500;
+            padding-left: 10px;
+        }
     }
 }

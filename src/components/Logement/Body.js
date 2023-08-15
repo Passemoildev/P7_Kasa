@@ -10,7 +10,6 @@ const FicheLogementDisplay = () => {
   /* Sélection en fonction de l'ID*/
   const { id } = useParams();
   const ficheLogement = DataFichLogement.find((logement) => logement.id === id);
-  console.log(ficheLogement);
 
   /* Tags */
   const tagsLogement = ficheLogement?.tags.map((tags, i) => {

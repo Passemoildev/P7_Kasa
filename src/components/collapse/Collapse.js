@@ -11,7 +11,7 @@ const Collapse = ({ title, content }) => {
 
   return (
     // affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et le style
-    <div className="collapse__dropdown__container">
+    <div className="collapse__dropdown__container" onClick={display}>
       <div className="collapse__dropdown__title">
         <h2>{title}</h2>
         <p className="chevron" onClick={display}>

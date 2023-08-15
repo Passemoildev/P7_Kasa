@@ -11,7 +11,7 @@ const Aboutus = () => {
     return (
         <div className='aboutus'>
             <Helmet>
-                <title>A propos</title>
+                <title>Kasa - A propos</title>
             </Helmet>
             <Header/>
             <main>

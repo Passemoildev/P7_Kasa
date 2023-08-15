@@ -8,7 +8,7 @@ const Error = () => {
     return (
         <div className="error">
             <Helmet>
-                <title>Oups... La page demandée n'éxiste pas</title>
+                <title>Kasa - Oups... La page demandée n'éxiste pas</title>
             </Helmet>
             <Header/>
             <NotFound/>

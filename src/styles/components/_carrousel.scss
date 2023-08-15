@@ -15,8 +15,12 @@
         border-radius: 20px;
     }
     &__number{
-        display: none;
+        position: absolute;
+        color: $tertiary-color;
+        @include mobile{
+            display: none;
     }
+}
 }
 
 .cont-arrows{

@@ -8,7 +8,7 @@ const FicheLogement =() =>{
     return(
         <div className="fiche_logement">
           <Helmet>
-            <title>Votre logement</title>
+            <title>Kasa - Votre logement</title>
           </Helmet>
           <Header />
           <main>

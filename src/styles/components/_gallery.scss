@@ -5,4 +5,8 @@
     background-color: $secondary-color;
     margin-top: 20px;
     border-radius: 20px;
+    @include mobile{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
