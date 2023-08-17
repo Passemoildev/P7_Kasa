@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 
 function Carrousel({ slides }) {
-  /*Définition du state à 0 du premier slide et définition de la longueur du tableau */
+  /*Définition du state à 0 du premier slide et définition de la longueur du tableau pour implémenter la fonctionnalité
+  de passage des slides du CDC en utilisant la personnalisation donnée par le hook */
   const [current, setCurrent] = useState(0); 
   const length = slides.length; 
 
-  /**Retour au premier slide quand on fait suivant au dernier slide*/
+  /*Retour au premier slide quand on fait suivant au dernier slide*/
   const nextImage = () => {
     setCurrent(current === length - 1 ? 0 : current + 1); 
   };
-  /**Retour au dernier slide quand on fait précédent au premier slide */
+  /*Retour au dernier slide quand on fait précédent au premier slide */
   const prevImage = () => {
     setCurrent(current === 0 ? length - 1 : current - 1); 
   };
